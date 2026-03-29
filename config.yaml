@@ -3,32 +3,6 @@
 # 采样间隔（秒）
 sample_interval: 5
 
-# 端口过滤（正则表达式，匹配端口号）
-# 例如: "^1000|^2000|^3000" 过滤 1xxx, 2xxx, 3xxx 端口
-port_filter: ""
-
-# 排除端口（不监控这些端口）
-# 常见本地回环端口: 127.0.0.1 相关服务
-exclude_ports: []
-
-# 告警阈值配置
-alert:
-  # 单端口连接数阈值，超过此值触发告警
-  port_connection_threshold: 100
-  # 单个IP连接数阈值
-  ip_connection_threshold: 50
-  # 邮件告警配置
-  email:
-    enabled: false
-    smtp_server: "smtp.example.com"
-    smtp_port: 587
-    username: "alert@example.com"
-    password: "your-password"
-    to: "admin@example.com"
-  # Slack Webhook 告警
-  slack:
-    enabled: false
-    webhook_url: "https://hooks.slack.com/services/XXX/YYY/ZZZ"
 
 # 日志配置
 log:
