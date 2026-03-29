@@ -47,10 +47,6 @@ python run.py -p 8080
 # 采样间隔（秒）
 sample_interval: 5
 
-# 端口过滤正则
-port_filter: ""
-
-
 # 日志配置
 log:
   path: "./monitor.log"
