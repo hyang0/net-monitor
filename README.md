@@ -50,23 +50,6 @@ sample_interval: 5
 # 端口过滤正则
 port_filter: ""
 
-# 排除端口
-exclude_ports: []
-
-# 告警阈值
-alert:
-  port_connection_threshold: 100   # 单端口连接数告警阈值
-  ip_connection_threshold: 50      # 单IP连接数告警阈值
-  email:
-    enabled: false
-    smtp_server: "smtp.example.com"
-    smtp_port: 587
-    username: "alert@example.com"
-    password: "your-password"
-    to: "admin@example.com"
-  slack:
-    enabled: false
-    webhook_url: "https://hooks.slack.com/services/XXX"
 
 # 日志配置
 log:
